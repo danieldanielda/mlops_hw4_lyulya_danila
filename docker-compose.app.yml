@@ -6,6 +6,6 @@ services:
       shm_size: '6gb'
     container_name: ml-service
     ports: 
-      - '8000:8000'
+      - '8080:8080'
     env_file:
       - '.env'
