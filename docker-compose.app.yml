@@ -1,0 +1,11 @@
+services:
+  ml-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      shm_size: '6gb'
+    container_name: ml-service
+    ports: 
+      - '8000:8000'
+    env_file:
+      - '.env'
