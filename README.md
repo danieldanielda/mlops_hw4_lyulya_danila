@@ -1,4 +1,4 @@
-# ML Service Monitoring (MLOps HW #4)
+# MLOps HW #4
 
 Домашнее задание по настройке мониторинга и алертинга для ML-сервиса с использованием Prometheus и Grafana.
 
@@ -28,27 +28,27 @@
 - Используемая метрика: request_latency_seconds (тип Histogram)
 
 Пример регистрации метрики в коде: <br>
-![Step 2](images/6.png)
+![Step 2](images/6.jpg)
 
 ## Dashboard Grafana
-![Step 2](images/1.png)
+![Step 2](images/1.jpg)
 
 ## Алерт
 - Срабатывает при p95 latency > 1 сек в течение 2 минут
-- Правило алерта настроено в prometheus.yml через Alertmanager: <br>
+- Правило алерта настроено в alertmanager.yml через Alertmanager: <br>
 
-![Step 2](images/5.png)
+![Step 2](images/5.jpg)
 
 Окно алерта
-![Step 2](images/2.png)
+![Step 2](images/2.jpg)
 
 ## Проверка
 Добавьте `time.sleep(2)` в `/predict`, отправьте запросы — алерт активируется. <br>
 
 В окне алерта вы увидете следующее: <br>
-![Step 2](images/3.png)
+![Step 2](images/3.jpg)
 
 Граф алерта: <br>
 
-![Step 2](images/4.png)
+![Step 2](images/4.jpg)
 
