@@ -18,6 +18,9 @@
 3. Откройте:
    - ML Service: http://localhost:8080/api/openapi
    - Prometheus: http://localhost:9090/targets
+
+![Step 2](images/7.jpg)
+
    - Grafana: http://localhost:3000 (логин/пароль: admin/admin)
 
 ## Метрики
