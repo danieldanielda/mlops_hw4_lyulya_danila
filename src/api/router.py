@@ -5,7 +5,7 @@ import numpy as np
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 from src.api.schemas import PredictResponse, HealthResponse, PredictRequest
-
+import time
 logger = logging.getLogger(__name__)
 api_router = APIRouter()
 
@@ -26,7 +26,7 @@ async def health() -> HealthResponse:
 async def predict(request: PredictRequest) -> PredictResponse:
     if MODEL is None:
         return JSONResponse(content="Model not loaded", status_code=500)
-    
+    time.sleep(2)
     try:
         features_array = np.array(request.features).reshape(1, -1)
         
