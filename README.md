@@ -1,4 +1,4 @@
-# ML Service Monitoring (MLOps HW #4)
+# MLOps HW #4
 
 Домашнее задание по настройке мониторинга и алертинга для ML-сервиса с использованием Prometheus и Grafana.
 
