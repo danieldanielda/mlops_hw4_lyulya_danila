@@ -32,7 +32,7 @@
 
 ## Алерт
 - Срабатывает при p95 latency > 1 сек в течение 2 минут
-- Правило алерта настроено в prometheus.yml через Alertmanager: <br>
+- Правило алерта настроено в alertmanager.yml через Alertmanager: <br>
 
 ![Step 2](images/5.jpg)
 
